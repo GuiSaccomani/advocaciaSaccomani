@@ -563,21 +563,47 @@ footer a:hover {
         display: block;
     }
 
+    section {
+        padding: 60px 0;
+    }
+
+    .hero {
+        padding: 80px 0 60px;
+        min-height: 60vh;
+    }
+
     .hero h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .hero-buttons {
         flex-direction: column;
         width: 100%;
+        gap: 15px;
     }
     
     .hero-buttons .btn {
         width: 100%;
     }
     
+    .section-header {
+        margin-bottom: 40px;
+    }
+
     .section-header h2 {
         font-size: 2rem;
+    }
+    
+    .cards-grid {
+        gap: 20px;
+    }
+    
+    .card {
+        padding: 30px 20px;
+    }
+    
+    .about-grid {
+        gap: 40px;
     }
     
     .footer-grid {
