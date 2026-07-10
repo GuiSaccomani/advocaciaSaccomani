@@ -116,9 +116,17 @@
         });
 
         document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                menuToggle.classList.remove('active');
-                navMenu.classList.remove('active');
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    const dropdown = link.nextElementSibling;
+                    if (dropdown && dropdown.classList.contains('dropdown-content')) {
+                        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                    }
+                } else {
+                    menuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
             });
         });
     </script>
