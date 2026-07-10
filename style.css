@@ -352,6 +352,7 @@ section {
     width: 100%;
     height: auto;
     display: block;
+    transform: scale(1.05); /* Aplica zoom para esconder a marca d'água nas bordas */
 }
 
 .stats-grid {
