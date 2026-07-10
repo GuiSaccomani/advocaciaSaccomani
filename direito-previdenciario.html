@@ -16,6 +16,13 @@
     <header>
         <div class="container header-container">
             <h1><a href="index.html">Advocacia <span>Saccomani</span></a></h1>
+            
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
             <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -97,5 +104,22 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
