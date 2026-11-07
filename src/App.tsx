@@ -193,8 +193,8 @@ export default function App() {
                     <span>{expandedArea === area.id ? "Fechar" : "Saiba Mais"}</span>
                     <ArrowIcon />
                   </button>
-                    <div className="area-details" id={area.id} hidden={expandedArea !== area.id}>
-                      {expandedArea === area.id && <>
+                  <div className="area-details" id={area.id} hidden={expandedArea !== area.id}>
+                    {expandedArea === area.id && <>
                       <h4>{area.heading}</h4>
                       <p>{area.intro}</p>
                       <h4>{area.detailHeading}</h4>
@@ -208,8 +208,8 @@ export default function App() {
                         ))}
                       </dl>
                       <a className="area-contact" href="https://wa.me/5511983541229" target="_blank" rel="noreferrer">{area.cta} <ArrowIcon /></a>
-                      </>}
-                    </div>
+                    </>}
+                  </div>
                 </article>
               ))}
             </div>
@@ -329,7 +329,7 @@ export default function App() {
                 </div>
                 <div>
                   <dt>E-mail:</dt>
-                  <dd><a href="mailto:advocaciasaccomani@gmail.com">advocaciasaccomani@gmail.com</a></dd>
+                  <dd><a href="mailto:advocacia.saccomani@gmail.com">advocacia.saccomani@gmail.com</a></dd>
                 </div>
                 <div>
                   <dt>Localização:</dt>
@@ -354,7 +354,7 @@ export default function App() {
             <h3>Contato Direto</h3>
             <a href="tel:+5511983541229">(11) 98354-1229</a>
             <a href="https://wa.me/5511983541229" target="_blank" rel="noreferrer">WhatsApp Disponível</a>
-            <a href="mailto:advocaciasaccomani@gmail.com">advocaciasaccomani@gmail.com</a>
+            <a href="mailto:advocacia.saccomani@gmail.com">advocacia.saccomani@gmail.com</a>
             <span>São Paulo, SP</span>
           </div>
           <div className="footer-links">
@@ -366,7 +366,7 @@ export default function App() {
           </div>
         </div>
         <div className="container footer-bottom">
-          <p>© 2024 Advocacia Saccomani. Todos os direitos reservados.</p>
+          <p>© 2026 Advocacia Saccomani. Todos os direitos reservados.</p>
           <span>OAB/SP</span>
         </div>
       </footer>
